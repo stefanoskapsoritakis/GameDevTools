@@ -18,21 +18,19 @@ public class Victory : MonoBehaviour
     {
         var p = collider.gameObject.GetComponent<CharacterController>();
 
-        /*
+        
          if(score.text == "1")
          {
 
             uiObject.SetActive(true);
             StartCoroutine(WaitForSec());
          }
-        */
-        uiObject.SetActive(true);
-        StartCoroutine(WaitForSec());
+    
 
 
         IEnumerator WaitForSec()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene(level);
             Destroy(uiObject);
             Destroy(gameObject);
