@@ -9,14 +9,14 @@ public class DialogueSystem : MonoBehaviour
     public Text dialogueText;
     public Queue<string> sentences;
     public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         dialogHolder.SetActive(false);
         sentences = new Queue<string>();
     }
-
-    // Update is called once per frame
+        // Update is called once per frame
     public void StartDialogue(Dialogue dialogue)
     {
         dialogHolder.SetActive(true);
@@ -27,6 +27,7 @@ public class DialogueSystem : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+       
         DisplayNextSentence();
     }
     public void DisplayNextSentence()
@@ -55,5 +56,12 @@ public class DialogueSystem : MonoBehaviour
         dialogHolder.SetActive(false);
         animator.SetBool("IsOpen", false);
 
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            DisplayNextSentence();
+        }
     }
 }
