@@ -12,11 +12,14 @@ public class SettingMenu : MonoBehaviour
 
     public Dropdown resolutionDropdown;
 
+    public Slider slider;
+
     public AudioMixer audioMixer;
 
-    public void SetVolume (float volume)
+    public void SetVolume ()
     {
-        audioMixer.SetFloat("Volume", volume);
+        float sliderValue = slider.value;
+        audioMixer.SetFloat("Volume", sliderValue);
     }
     public void SetQuality(int qualityIndex)
     {
