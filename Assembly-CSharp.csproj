@@ -89,6 +89,8 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SettingMenu.cs" />
     <Compile Include="Assets\Scripts\SignTutorial.cs" />
+    <Compile Include="Assets\Scripts\TimeRun.cs" />
+    <Compile Include="Assets\Scripts\TreatScript.cs" />
     <Compile Include="Assets\Scripts\Victory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
