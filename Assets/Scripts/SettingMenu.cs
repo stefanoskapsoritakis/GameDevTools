@@ -11,18 +11,21 @@ public class SettingMenu : MonoBehaviour
      Resolution[] resolutions;
 
     public Dropdown resolutionDropdown;
-
-    public Slider slider;
+    public Dropdown qualityDropdown;
+    public Slider volumeSlider;
 
     public AudioMixer audioMixer;
 
     public void SetVolume ()
     {
-        float sliderValue = slider.value;
+        float sliderValue = volumeSlider.value;
+        Debug.Log(sliderValue);
         audioMixer.SetFloat("Volume", sliderValue);
     }
-    public void SetQuality(int qualityIndex)
+    public void SetQuality()
     {
+        int qualityIndex = qualityDropdown.value;
+        Debug.Log(qualityIndex);
         QualitySettings.SetQualityLevel(qualityIndex);
     }
     public void SetResolution(int resolutionIndex)
