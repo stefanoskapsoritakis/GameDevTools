@@ -1332,7 +1332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241210118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.41, y: -12.35, z: -14}
+  m_LocalPosition: {x: 0, y: -4.3999996, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1089301202}
@@ -2797,7 +2797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780356889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.884299, y: -5.6236258, z: -0.16015625}
+  m_LocalPosition: {x: 8.884299, y: -5.6236258, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 130424848}
@@ -5097,7 +5097,7 @@ MonoBehaviour:
   gameOverText: {fileID: 1770942042}
   restartButton: {fileID: 306298683}
   isGameActive: 1
-  time: 20
+  time: 30
 --- !u!1 &1513119601
 GameObject:
   m_ObjectHideFlags: 0
