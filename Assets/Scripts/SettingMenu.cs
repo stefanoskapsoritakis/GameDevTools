@@ -8,11 +8,11 @@ using UnityEngine.UI;
 public class SettingMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-     Resolution[] resolutions;
+     public Resolution[] resolutions;
 
     public Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
-
+    
     public Slider volumeSlider;
 
     public AudioMixer audioMixer;
@@ -28,29 +28,21 @@ public class SettingMenu : MonoBehaviour
         Debug.Log(qualityIndex);
         QualitySettings.SetQualityLevel(qualityIndex);
     }
-    public void SetResolution(int resolutionIndex)
+    public void SetResolution()
     {
+        int resolutionIndex = resolutionDropdown.value;
+        Debug.Log(resolutionIndex);
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
     private void Start()
     {
+        qualityDropdown.onValueChanged.AddListener(delegate { SetQuality(); });
+        resolutionDropdown.onValueChanged.AddListener(delegate { SetResolution(); });
         resolutions = Screen.resolutions;
-        resolutionDropdown.ClearOptions();
-        List<string> options = new List<string>();
-        int currentRevolutionIndex = 0;
-        for(int i = 0; i < resolutions.Length; i++)
+        foreach(Resolution resolution in resolutions)
         {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
-            options.Add(option);
-            if(resolutions[i].height == Screen.currentResolution.height && resolutions[i].width == Screen.currentResolution.width)
-            {
-                currentRevolutionIndex = i;
-            }
+            resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
         }
-
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentRevolutionIndex;
-        resolutionDropdown.RefreshShownValue();
     }
 }

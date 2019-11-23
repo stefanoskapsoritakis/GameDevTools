@@ -8,11 +8,13 @@ public class TimeRun : MonoBehaviour
     public Text timeText;
     [SerializeField] private Text gameOverText;
     [SerializeField] private Button restartButton;
-    public bool isGameActive =true ;
+    private CharacterController2D characterController;
+    
+    
     public float time = 30;
     void Start()
     {
-
+        characterController = FindObjectOfType<CharacterController2D>();
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class TimeRun : MonoBehaviour
     }
     public void UpdateTime()
     {
-        if (isGameActive)
+        if (!characterController.gameOver)
         {
             time = time - Time.deltaTime;
             timeText.text = "Time: " + Mathf.Round(time);
@@ -37,11 +39,12 @@ public class TimeRun : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
-        isGameActive = false;
+        characterController.gameOver = true;
+
     }
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        isGameActive = true;
+        characterController.gameOver = false;
     }
 }
