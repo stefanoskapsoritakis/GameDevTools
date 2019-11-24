@@ -59,7 +59,7 @@ public class DialogueSystem : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             DisplayNextSentence();
         }
