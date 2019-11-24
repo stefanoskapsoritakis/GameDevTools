@@ -2,15 +2,12 @@ fileFormatVersion: 2
 guid: 248e3038714dd134588abac1a3bf47b7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fat_runner_pixel_3_best_0
-    21300002: fat_runner_pixel_3_best_1
-    21300004: fat_runner_pixel_3_best_2
-    21300006: fat_runner_pixel_3_best_3
-    21300008: fat_runner_pixel_3_best_4
-    21300010: fat_runner_pixel_3_best_5
-    21300012: fat_runner_pixel_3_best_6
-    21300014: fat_runner_pixel_3_best_7
-    21300016: fat_runner_pixel_3_best_8
+    21300000: 6
+    21300002: 5
+    21300004: 1
+    21300006: 2
+    21300008: 4
+    21300010: 3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -72,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -83,7 +80,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,33 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fat_runner_pixel_3_best_0
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 1026
-        width: 108
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5eb9523ec832a944a8d2ccd636e3038c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fat_runner_pixel_3_best_1
+      name: 6
       rect:
         serializedVersion: 2
         x: 480
-        y: 539
+        y: 624
         width: 480
-        height: 517
+        height: 432
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,39 +104,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1913c0d9fb909a4f9a0d7d1f1796639
+      spriteID: 0fb1dc9b9d7c34d4e839d645d1cc34b6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fat_runner_pixel_3_best_2
-      rect:
-        serializedVersion: 2
-        x: 696
-        y: 1020
-        width: 108
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df4cd8a775b4b7f4db21372482631dec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fat_runner_pixel_3_best_3
+      name: 5
       rect:
         serializedVersion: 2
         x: 0
-        y: 536
+        y: 612
         width: 468
-        height: 520
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ba16a2a7ccb85a418fda15f82e44f42
+      spriteID: 827db1972078a4e4e93a913d7b0bca96
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fat_runner_pixel_3_best_4
+      name: 1
       rect:
         serializedVersion: 2
         x: 960
         y: 540
         width: 456
-        height: 516
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,13 +144,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8900a5bddf908034da846c40faeeaeb0
+      spriteID: 3c77f7b7179747344b9bb777ff5b2464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fat_runner_pixel_3_best_5
+      name: 2
       rect:
         serializedVersion: 2
         x: 0
@@ -207,13 +164,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 925bd2afd1d3d244790318d427b33870
+      spriteID: 9a1ccef96a62ac44c9199332d8cc4970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fat_runner_pixel_3_best_6
+      name: 4
       rect:
         serializedVersion: 2
         x: 960
@@ -227,33 +184,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd0377e2dcf6781449c361ba98d62cb5
+      spriteID: 5792fcfcdc22ec7448b8e07225446731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fat_runner_pixel_3_best_7
-      rect:
-        serializedVersion: 2
-        x: 1176
-        y: 480
-        width: 108
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca7471b671fa0e6439ae73164c071838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fat_runner_pixel_3_best_8
+      name: 3
       rect:
         serializedVersion: 2
         x: 480
@@ -267,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e2ebd18a93c184c88fb054354d66ec
+      spriteID: d0ab69a8f35bf4a4eaf86e880cf839bd
       vertices: []
       indices: 
       edges: []
@@ -275,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8b61abdae8425db43aa9f93eb45eacd9
+    spriteID: 10074673c487d5b429783633b7bc5218
     vertices: []
     indices: 
     edges: []

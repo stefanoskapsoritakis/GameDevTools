@@ -9,6 +9,7 @@ public class Victory : MonoBehaviour
     public GameObject uiObject;
     public Text score;
     public int level;
+    public Animator doorAnimator;
     // Start is called before the first frame update
     private void Start()
     {
@@ -30,10 +31,10 @@ public class Victory : MonoBehaviour
 
         IEnumerator WaitForSec()
         {
+            doorAnimator.SetBool("Open", true);
             yield return new WaitForSeconds(2);
             SceneManager.LoadScene(level);
             Destroy(uiObject);
-            Destroy(gameObject);
         }
     }
 }
