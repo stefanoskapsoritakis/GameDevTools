@@ -750,8 +750,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 108474143}
   m_HandleRect: {fileID: 236417893}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 80
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -3542,7 +3542,7 @@ MonoBehaviour:
   resolutionDropdown: {fileID: 123664116}
   qualityDropdown: {fileID: 403276013}
   volumeSlider: {fileID: 405032045}
-  audioMixer: {fileID: 24100000, guid: 4b3a335f930a7c646888cedb976a83a6, type: 2}
+  audioSrc: {fileID: 1639798571}
 --- !u!82 &1639798571
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3570,7 +3570,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [TextArea(3, 10)]
-    public string[] sentences
+    public string[] sentences;
     public Dialogue dialogue;
     void OnTriggerEnter2D(Collider2D collider)
     {

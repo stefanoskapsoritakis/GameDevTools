@@ -15,34 +15,29 @@ public class SettingMenu : MonoBehaviour
     
     public Slider volumeSlider;
 
-    public AudioMixer audioMixer;
-    public void SetVolume ()
+    public AudioSource audioSrc;
+    public GameSettings gameSettings;
+    void OnEnable()
     {
-        float sliderValue = volumeSlider.value;
-        Debug.Log(sliderValue);
-        audioMixer.SetFloat("Volume", sliderValue);
-    }
-    public void SetQuality()
-    {
-        int qualityIndex = qualityDropdown.value;
-        Debug.Log(qualityIndex);
-        QualitySettings.SetQualityLevel(qualityIndex);
-    }
-    public void SetResolution()
-    {
-        int resolutionIndex = resolutionDropdown.value;
-        Debug.Log(resolutionIndex);
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-    }
-    private void Start()
-    {
-        qualityDropdown.onValueChanged.AddListener(delegate { SetQuality(); });
-        resolutionDropdown.onValueChanged.AddListener(delegate { SetResolution(); });
+        gameSettings = new GameSettings();
         resolutions = Screen.resolutions;
-        foreach(Resolution resolution in resolutions)
-        {
-            resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
-        }
+        qualityDropdown.onValueChanged.AddListener(delegate { OnQualityChange(); });
+        resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
+        volumeSlider.onValueChanged.AddListener(delegate { OnVolumeChange(); });
     }
+    public void OnResolutionChange()
+    {
+
+    }
+    public void OnQualityChange()
+    {
+        QualitySettings.masterTextureLimit = gameSettings.textureQuality = qualityDropdown.value;
+
+        Debug.Log(QualitySettings.masterTextureLimit.ToString());
+    }
+    public void OnVolumeChange()
+    {
+        audioSrc.volume =gameSettings.musicVolume = volumeSlider.value;
+        Debug.Log(volumeSlider.value);
+    }  
 }
