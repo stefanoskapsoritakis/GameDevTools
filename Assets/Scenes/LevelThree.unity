@@ -873,6 +873,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &124244408
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1334386048}
+    m_Modifications:
+    - target: {fileID: 1042871219747694771, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_Name
+      value: SignWithText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.90625
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Escape from all the corrupted dogs and catchers!
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e8a337e157f9754dbfaab8067378645, type: 3}
 --- !u!1 &132071366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,7 +2002,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 997a43b767814dd0a7642ec9b78cba41, type: 3}
+    m_Font: {fileID: 12800000, guid: ba9dc3539f9e9b84aaab5b29cc490eff, type: 3}
     m_FontSize: 33
     m_FontStyle: 1
     m_BestFit: 0
@@ -7297,7 +7376,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 997a43b767814dd0a7642ec9b78cba41, type: 3}
+    m_Font: {fileID: 12800000, guid: ba9dc3539f9e9b84aaab5b29cc490eff, type: 3}
     m_FontSize: 33
     m_FontStyle: 1
     m_BestFit: 0
@@ -8416,6 +8495,41 @@ PrefabInstance:
     - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
         type: 3}
       propertyPath: m_FontData.m_LineSpacing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953536230536948, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9771,6 +9885,7 @@ Transform:
   m_Children:
   - {fileID: 143949275}
   - {fileID: 596352843}
+  - {fileID: 2088593661}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11041,7 +11156,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 997a43b767814dd0a7642ec9b78cba41, type: 3}
+    m_Font: {fileID: 12800000, guid: ba9dc3539f9e9b84aaab5b29cc490eff, type: 3}
     m_FontSize: 33
     m_FontStyle: 1
     m_BestFit: 0
@@ -13771,6 +13886,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044741445}
   m_CullTransparentMesh: 0
+--- !u!4 &2088593661 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+    type: 3}
+  m_PrefabInstance: {fileID: 124244408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2090570461
 GameObject:
   m_ObjectHideFlags: 0

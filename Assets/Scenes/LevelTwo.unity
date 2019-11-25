@@ -2558,6 +2558,26 @@ PrefabInstance:
       propertyPath: m_FontData.m_LineSpacing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953535794059050, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593953536230536948, guid: f432e1f4c55280448a811acf21f6fe90,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f432e1f4c55280448a811acf21f6fe90, type: 3}
 --- !u!1 &536249813
@@ -3957,6 +3977,7 @@ Transform:
   m_Children:
   - {fileID: 1405792493}
   - {fileID: 2021617059}
+  - {fileID: 1367529956}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4538,6 +4559,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1367529956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+    type: 3}
+  m_PrefabInstance: {fileID: 2031244053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1386573187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7846,6 +7873,90 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &2031244053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1146106629}
+    m_Modifications:
+    - target: {fileID: 1042871219747694771, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_Name
+      value: SignWithText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.008727774
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999619
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Reach the end before the timer runs out!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Treats give you more time.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e8a337e157f9754dbfaab8067378645, type: 3}
 --- !u!1 &2063326804
 GameObject:
   m_ObjectHideFlags: 0
