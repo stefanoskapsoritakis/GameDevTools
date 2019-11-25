@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-
+using System.IO;
 
 public class SettingMenu : MonoBehaviour
 {
@@ -24,20 +24,28 @@ public class SettingMenu : MonoBehaviour
         qualityDropdown.onValueChanged.AddListener(delegate { OnQualityChange(); });
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
         volumeSlider.onValueChanged.AddListener(delegate { OnVolumeChange(); });
+        resolutions = Screen.resolutions;
+        foreach(Resolution resolution in resolutions)
+        {
+            resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
+        }
     }
     public void OnResolutionChange()
     {
-
+        Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, Screen.fullScreen);
     }
     public void OnQualityChange()
     {
-        QualitySettings.masterTextureLimit = gameSettings.textureQuality = qualityDropdown.value;
+        QualitySettings.SetQualityLevel(qualityDropdown.value);
+        Debug.Log(QualitySettings.GetQualityLevel());
+        gameSettings.textureQuality = qualityDropdown.value;
 
-        Debug.Log(QualitySettings.masterTextureLimit.ToString());
+        
     }
     public void OnVolumeChange()
     {
         audioSrc.volume =gameSettings.musicVolume = volumeSlider.value;
         Debug.Log(volumeSlider.value);
     }  
+    
 }
