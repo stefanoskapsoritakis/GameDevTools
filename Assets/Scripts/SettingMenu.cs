@@ -9,43 +9,63 @@ public class SettingMenu : MonoBehaviour
 {
     // Start is called before the first frame update
      public Resolution[] resolutions;
-
+    public Toggle fullScreenToggle;
     public Dropdown resolutionDropdown;
-    public Dropdown qualityDropdown;
+    public Resolution currentResolution;
+    
     
     public Slider volumeSlider;
 
     public AudioSource audioSrc;
     public GameSettings gameSettings;
-    void OnEnable()
+    public void OnEnable()
     {
         gameSettings = new GameSettings();
         resolutions = Screen.resolutions;
-        qualityDropdown.onValueChanged.AddListener(delegate { OnQualityChange(); });
+        currentResolution = Screen.currentResolution;
+        gameSettings.currentVolume = volumeSlider.value;
+        gameSettings.currentFullScreen = fullScreenToggle.isOn;
+        fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenChange(); });
+        
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
         volumeSlider.onValueChanged.AddListener(delegate { OnVolumeChange(); });
         resolutions = Screen.resolutions;
-        foreach(Resolution resolution in resolutions)
+        resolutionDropdown.options.Add(new Dropdown.OptionData(currentResolution.ToString()));
+        foreach (Resolution resolution in resolutions)
         {
             resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
         }
+        
     }
     public void OnResolutionChange()
     {
         Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, Screen.fullScreen);
     }
-    public void OnQualityChange()
-    {
-        QualitySettings.SetQualityLevel(qualityDropdown.value);
-        Debug.Log(QualitySettings.GetQualityLevel());
-        gameSettings.textureQuality = qualityDropdown.value;
-
-        
-    }
+    
     public void OnVolumeChange()
     {
         audioSrc.volume =gameSettings.musicVolume = volumeSlider.value;
         Debug.Log(volumeSlider.value);
     }  
-    
+    public void OnFullScreenChange()
+    {
+        Screen.fullScreen = fullScreenToggle.isOn;
+        gameSettings.fullScreen = fullScreenToggle.isOn;
+    }
+    public void OnApplyButtonClick()
+    {
+        gameSettings.isApply = true;
+        currentResolution = Screen.currentResolution;
+        gameSettings.currentVolume = volumeSlider.value;
+        gameSettings.currentFullScreen = fullScreenToggle.isOn;
+    }
+    public void OnCancelButtonClick()
+    {
+        gameSettings.isApply = false;
+        Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);        
+        audioSrc.volume = gameSettings.currentVolume;
+        volumeSlider.value = gameSettings.currentVolume;
+        Screen.fullScreen = gameSettings.currentFullScreen;
+        fullScreenToggle.isOn = gameSettings.currentFullScreen;
+    }
 }

@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameSettings 
 {
     // Start is called before the first frame update
-    public int textureQuality;
+    public bool fullScreen;
     public int resolutionIndex;
     public float musicVolume;
-
+    public bool isApply = false;
+    public float currentVolume;
+    public bool currentFullScreen;
 }
