@@ -14,6 +14,6 @@ public class KillZoneScript : MonoBehaviour
 
         if (collision.transform.CompareTag("Player"))
             collision.transform.position = spawnPoint.position;
-        audioSrc.PlayOneShot(restartSound);
+            audioSrc.PlayOneShot(restartSound);
     }
 }

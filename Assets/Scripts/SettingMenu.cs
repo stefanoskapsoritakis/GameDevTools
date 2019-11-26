@@ -23,7 +23,11 @@ public class SettingMenu : MonoBehaviour
         gameSettings = new GameSettings();
         resolutions = Screen.resolutions;
         currentResolution = Screen.currentResolution;
-        gameSettings.currentVolume = volumeSlider.value;
+        volumeSlider.value = gameSettings.currentVolume;
+        audioSrc.volume = volumeSlider.value;
+        Debug.Log("current volume : "+ gameSettings.currentVolume);
+        
+        
         gameSettings.currentFullScreen = fullScreenToggle.isOn;
         fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenChange(); });
         
@@ -44,7 +48,7 @@ public class SettingMenu : MonoBehaviour
     
     public void OnVolumeChange()
     {
-        audioSrc.volume =gameSettings.musicVolume = volumeSlider.value;
+        audioSrc.volume = volumeSlider.value;
         Debug.Log(volumeSlider.value);
     }  
     public void OnFullScreenChange()
@@ -58,6 +62,9 @@ public class SettingMenu : MonoBehaviour
         currentResolution = Screen.currentResolution;
         gameSettings.currentVolume = volumeSlider.value;
         gameSettings.currentFullScreen = fullScreenToggle.isOn;
+        Debug.Log("volume:" + gameSettings.currentVolume);
+        
+        
     }
     public void OnCancelButtonClick()
     {

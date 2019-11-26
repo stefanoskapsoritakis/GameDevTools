@@ -9,8 +9,8 @@ public class TimeRun : MonoBehaviour
     [SerializeField] private Text gameOverText;
     [SerializeField] private Button restartButton;
     private CharacterController2D characterController;
-    
-    
+    [SerializeField] private AudioSource audioSrc;
+    [SerializeField] private AudioClip deadSound;
     public float time = 30;
     void Start()
     {
@@ -40,7 +40,7 @@ public class TimeRun : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
         characterController.gameOver = true;
-
+        audioSrc.PlayOneShot(deadSound);
     }
     public void RestartGame()
     {

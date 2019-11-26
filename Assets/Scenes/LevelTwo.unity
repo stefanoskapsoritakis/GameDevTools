@@ -944,8 +944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &103005538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,8 +2418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &404906929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3254,8 +3254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &592219673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,8 +3866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &890768446
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,8 +4524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!114 &964295649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4680,8 +4680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &1044221942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5509,8 +5509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &1216051858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,8 +6515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &1485513842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6867,6 +6867,8 @@ MonoBehaviour:
   timeText: {fileID: 142236798}
   gameOverText: {fileID: 1770942042}
   restartButton: {fileID: 306298683}
+  audioSrc: {fileID: 1876065301}
+  deadSound: {fileID: 8300000, guid: a8547b97dda720544a2b8889dc3f7b58, type: 3}
   time: 30
 --- !u!1 &1513119601
 GameObject:
@@ -7671,8 +7673,8 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 639448485}
   m_CeilingCheck: {fileID: 433296139}
   m_CrouchDisableCollider: {fileID: 0}
-  jumpSound: {fileID: 0}
-  audioSrc: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: d56bbbc7ee057384ca42ec1e10cc26d7, type: 3}
+  audioSrc: {fileID: 1876065301}
   gameOver: 0
   OnLandEvent:
     m_PersistentCalls:
@@ -7909,8 +7911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &1684303671
 GameObject:
   m_ObjectHideFlags: 0
@@ -9080,8 +9082,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!1 &1896488119
 GameObject:
   m_ObjectHideFlags: 0
@@ -9445,7 +9447,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9772,8 +9774,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRun: {fileID: 1511842673}
-  audioSrc: {fileID: 0}
-  pickupTreatSound: {fileID: 0}
+  audioSrc: {fileID: 1876065301}
+  pickupTreatSound: {fileID: 8300000, guid: de52fe097ebdf5b4ca14fc0876f25c68, type: 3}
 --- !u!213 &2012994588
 Sprite:
   m_ObjectHideFlags: 0
