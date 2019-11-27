@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSettings 
+public class GameSettings
 {
     // Start is called before the first frame update
     public bool fullScreen;
@@ -11,3 +11,4 @@ public class GameSettings
     public float currentVolume;
     public bool currentFullScreen;
 }
+

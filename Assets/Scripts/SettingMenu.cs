@@ -17,18 +17,24 @@ public class SettingMenu : MonoBehaviour
     public Slider volumeSlider;
 
     public AudioSource audioSrc;
-    public GameSettings gameSettings;
+    
+    public bool fullScreen;
+    public int resolutionIndex;
+    public bool isApply = false;
+    public float currentVolume =1f;
+    public bool currentFullScreen;
+
     public void OnEnable()
     {
-        gameSettings = new GameSettings();
+        
         resolutions = Screen.resolutions;
         currentResolution = Screen.currentResolution;
-        volumeSlider.value = gameSettings.currentVolume;
+        volumeSlider.value = currentVolume;
         audioSrc.volume = volumeSlider.value;
-        Debug.Log("current volume : "+ gameSettings.currentVolume);
+        Debug.Log("current volume : "+currentVolume);
         
         
-        gameSettings.currentFullScreen = fullScreenToggle.isOn;
+        currentFullScreen = fullScreenToggle.isOn;
         fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenChange(); });
         
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
@@ -54,25 +60,25 @@ public class SettingMenu : MonoBehaviour
     public void OnFullScreenChange()
     {
         Screen.fullScreen = fullScreenToggle.isOn;
-        gameSettings.fullScreen = fullScreenToggle.isOn;
+        fullScreen = fullScreenToggle.isOn;
     }
     public void OnApplyButtonClick()
     {
-        gameSettings.isApply = true;
+        isApply = true;
         currentResolution = Screen.currentResolution;
-        gameSettings.currentVolume = volumeSlider.value;
-        gameSettings.currentFullScreen = fullScreenToggle.isOn;
-        Debug.Log("volume:" + gameSettings.currentVolume);
+        currentVolume = volumeSlider.value;
+        currentFullScreen = fullScreenToggle.isOn;
+        Debug.Log("volume:" + currentVolume);
         
         
     }
     public void OnCancelButtonClick()
     {
-        gameSettings.isApply = false;
+        isApply = false;
         Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);        
-        audioSrc.volume = gameSettings.currentVolume;
-        volumeSlider.value = gameSettings.currentVolume;
-        Screen.fullScreen = gameSettings.currentFullScreen;
-        fullScreenToggle.isOn = gameSettings.currentFullScreen;
+        audioSrc.volume = currentVolume;
+        volumeSlider.value = currentVolume;
+        Screen.fullScreen = currentFullScreen;
+        fullScreenToggle.isOn = currentFullScreen;
     }
 }
