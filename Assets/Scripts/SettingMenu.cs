@@ -68,7 +68,10 @@ public class SettingMenu : MonoBehaviour
     }
     public void OnApplyButtonClick()
     {
-        FindObjectOfType<PauseScript>().Resume();
+        if (FindObjectOfType<PauseScript>() != null) {
+            FindObjectOfType<PauseScript>().Resume();
+        }
+        
         isApply = true;
         currentResolution = Screen.currentResolution;
         currentVolume = volumeSlider.value;
@@ -77,7 +80,11 @@ public class SettingMenu : MonoBehaviour
     }
     public void OnCancelButtonClick()
     {
-        FindObjectOfType<PauseScript>().Resume();
+
+        if (FindObjectOfType<PauseScript>() != null)
+        {
+            FindObjectOfType<PauseScript>().Resume();
+        }
         isApply = false;
         Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);        
         audioSrc.volume = currentVolume;
