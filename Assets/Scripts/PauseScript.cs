@@ -7,10 +7,11 @@ public class PauseScript : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public GameObject pauseButton;
+    public GameObject pauseOptions;
     private void Start()
     {
         pauseMenuUI.SetActive(false);
+        pauseOptions.SetActive(false);
     }
     void Update()
     {
@@ -29,6 +30,7 @@ public class PauseScript : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        pauseOptions.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }

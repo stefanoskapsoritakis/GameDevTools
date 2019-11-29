@@ -1,17 +1,18 @@
 Win64
 PlayerPath?
-C:/Users/soulb/OneDrive/Desktop/TestBuild/GameDevTools.exe
+D:/Programming/New folder/New folder/GameDevTools.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/SceneSelector.unity
 Assets/Scenes/MainGame.unity
 Assets/Scenes/LevelTwo.unity
 Assets/Scenes/LevelThree.unity
+Assets/Scenes/LevelFour.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GUIAnimatorFREEDemo
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
-48eca1155913b98fb1d4a727709979cc Assembly-CSharp.dll:.SettingMenu
+53229c62d470015184b9c2c8884be1ef Assembly-CSharp.dll:.SettingMenu
 14eb6d3ce236f67227373a4016f4915b Assembly-CSharp.dll:.GA_FREE_Demo07
 77c21079ace8d76ce6e941d3dabbfe6e Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -162,7 +163,7 @@ e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
 e94eb8d93521e276cb2aed1745100212 Assembly-CSharp.dll:.PlayerMovement
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachinePipeline
 694d20920c0e41f567e119f7159a3644 Cinemachine.dll:Cinemachine.CinemachinePath
-a79a3b31305c8f6f4d8a8098c0c8af7d Assembly-CSharp.dll:.PauseScript
+3821b80eedbcf46e3a2c9eb50c43654e Assembly-CSharp.dll:.PauseScript
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 3cae62e09a50c5d5aae8d0536b3d8fde Assembly-CSharp.dll:.ChatController
 56df1fa7cea034df9863fe5a24200a32 Cinemachine.dll:Cinemachine.CinemachineTargetGroup
@@ -242,7 +243,7 @@ e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexZoom
 f2b40f5e342c0a3909bc7cd54b7c1e79 Assembly-CSharp.dll:.loadOnClick
 0701e8948ad53c0c8ba48b66071744f5 Assembly-CSharp.dll:.GA_FREE_Demo01
 381be71b53b7421158e682e737f31185 Assembly-CSharp.dll:.DialogueSystem
-47a2ff971f88ab04a68515e8fb75b65e Assembly-CSharp.dll:.Victory
+dc6d6c2a6cf3e4742615cc520cc1a0ad Assembly-CSharp.dll:.Victory
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 e80c1450883443c68d6c2dade213536f Assembly-CSharp.dll:TMPro.Examples.TMPro_InstructionOverlay
 68580ebce45b2424ae1a1be9b418e672 Assembly-CSharp.dll:.IdleWalker
@@ -255,7 +256,7 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8b1fe5dfdcf943fb3b72506b9f19335f Assembly-CSharp.dll:.EnvMapAnimator
 97e11735925cb95e7c6bbed641ca4fdc GUIAnimatorFREE.dll:.GUIAnimFREE
 bb1b5d983e81560c84aee567a9fc61f3 GUIAnimatorFREE.dll:.GUIAnimSystemFREE
-cab2dbdf35a14413bfda645b6fc6daa9 Assembly-CSharp.dll:.TimeRun
+104fa638ef46f14e2f57529733bcdec6 Assembly-CSharp.dll:.TimeRun
 872581c80c5fcfb8c9c15216659e8b0f Assembly-CSharp.dll:.GA_FREE_Demo02
 b6ae07b272c46c9972c5bdefeba54447 Assembly-CSharp.dll:.GA_FREE_DemoPlaySound
 c5dde70eb7b48338cedcbf711758ccad Assembly-CSharp.dll:.GA_FREE_Demo08
@@ -266,3 +267,4 @@ ffdbd5802c2482a072a88f428ad3ca9d Cinemachine.dll:Cinemachine.CinemachineBrain
 94a6212bc97ed891bf46c9c21a0658cc Cinemachine.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 2792936179724025482dc04d68a47ca7 Cinemachine.dll:Cinemachine.CinemachineClearShot
 b73e694313708937fe177a0e0ede9630 Assembly-CSharp.dll:.GA_FREE_Demo06
+73740c983ece2c41a4d6e228c4fb5c09 Assembly-CSharp.dll:.ScreenSelector

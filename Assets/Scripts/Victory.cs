@@ -8,8 +8,9 @@ public class Victory : MonoBehaviour
 {
     public GameObject uiObject;
     public Text score;
-    public int level;
+    public int scenes;
     public Animator doorAnimator;
+    public int nextLevel;
     // Start is called before the first frame update
     private void Start()
     {
@@ -24,6 +25,7 @@ public class Victory : MonoBehaviour
          {
 
             uiObject.SetActive(true);
+            PlayerPrefs.SetInt("levelReached",nextLevel);
             StartCoroutine(WaitForSec());
          }
     
@@ -33,7 +35,7 @@ public class Victory : MonoBehaviour
         {
             doorAnimator.SetBool("Open", true);
             yield return new WaitForSeconds(2);
-            SceneManager.LoadScene(level);
+            SceneManager.LoadScene(scenes);
             Destroy(uiObject);
         }
     }

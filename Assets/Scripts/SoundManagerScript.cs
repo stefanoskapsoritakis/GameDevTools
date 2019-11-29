@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
+
+    public AudioSource audioSource;
+
     void Start()
     {
-        
-    
-
-
+        audioSource.volume = PlayerPrefs.GetFloat("SliderVolumeLevel", 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     
 }

@@ -8894,7 +8894,7 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Yellow
+    - Key found!
 --- !u!1 &206708332
 GameObject:
   m_ObjectHideFlags: 0
@@ -10999,7 +10999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 796988185}
-  pauseButton: {fileID: 0}
+  pauseOptions: {fileID: 589505885}
 --- !u!114 &429929969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11233,6 +11233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea795d8dd56328418f3bd46fa987b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 493598150}
 --- !u!4 &493598149
 Transform:
   m_ObjectHideFlags: 0
@@ -11532,7 +11533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3166137, y: -8.088692, z: -14}
+  m_LocalPosition: {x: -4.3092275, y: -8.088692, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1349971475}
@@ -11825,7 +11826,7 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Explore the map to find the exit!
+    - Find the key to leave the map!
 --- !u!61 &571232576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11893,6 +11894,11 @@ MonoBehaviour:
   resolutionDropdown: {fileID: 1877678409}
   volumeSlider: {fileID: 1377328096}
   audioSrc: {fileID: 493598150}
+  fullScreen: 0
+  resolutionIndex: 0
+  isApply: 0
+  currentVolume: 1
+  currentFullScreen: 0
 --- !u!114 &589505887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13898,13 +13904,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 63d14dbf659599b4eb85ee53f43d0f24, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -18502,8 +18508,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObject: {fileID: 1076823804}
   score: {fileID: 633547266}
-  level: 0
+  scenes: 1
   doorAnimator: {fileID: 1995076769}
+  nextLevel: 2
 --- !u!61 &1995076768
 BoxCollider2D:
   m_ObjectHideFlags: 0

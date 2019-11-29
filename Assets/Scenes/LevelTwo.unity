@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1501665025}
-  pauseButton: {fileID: 0}
+  pauseOptions: {fileID: 378035382}
 --- !u!1 &42729442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2262,11 @@ MonoBehaviour:
   resolutionDropdown: {fileID: 892432446}
   volumeSlider: {fileID: 1921829094}
   audioSrc: {fileID: 1876065301}
+  fullScreen: 0
+  resolutionIndex: 0
+  isApply: 0
+  currentVolume: 1
+  currentFullScreen: 0
 --- !u!1 &378892419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,13 +2979,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 63d14dbf659599b4eb85ee53f43d0f24, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -5991,6 +5996,7 @@ GameObject:
   - component: {fileID: 1405792496}
   - component: {fileID: 1405792495}
   - component: {fileID: 1405792494}
+  - component: {fileID: 1405792497}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -6100,6 +6106,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1405792497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405792492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a36e67efe70fa4dbc26d2969190995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences: []
+  dialogue:
+    sentences:
+    - Key found!
 --- !u!114 &1407624954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8773,6 +8795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876065302}
   - component: {fileID: 1876065301}
+  - component: {fileID: 1876065303}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -8890,6 +8913,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1876065303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876065300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea795d8dd56328418f3bd46fa987b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1876065301}
 --- !u!1 &1876246348
 GameObject:
   m_ObjectHideFlags: 0
@@ -10033,8 +10069,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObject: {fileID: 525083195}
   score: {fileID: 1513119604}
-  level: 0
+  scenes: 0
   doorAnimator: {fileID: 2021617063}
+  nextLevel: 3
 --- !u!61 &2021617061
 BoxCollider2D:
   m_ObjectHideFlags: 0

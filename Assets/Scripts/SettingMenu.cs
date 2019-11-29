@@ -24,16 +24,19 @@ public class SettingMenu : MonoBehaviour
     public float currentVolume =1f;
     public bool currentFullScreen;
 
+    public void Start()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("SliderVolumeLevel", audioSrc.volume);
+        audioSrc.volume = PlayerPrefs.GetFloat("SliderVolumeLevel", audioSrc.volume);
+        audioSrc.volume = volumeSlider.value;
+
+    }
     public void OnEnable()
     {
         
         resolutions = Screen.resolutions;
         currentResolution = Screen.currentResolution;
-        volumeSlider.value = currentVolume;
-        audioSrc.volume = volumeSlider.value;
-        Debug.Log("current volume : "+currentVolume);
-        
-        
+              
         currentFullScreen = fullScreenToggle.isOn;
         fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenChange(); });
         
@@ -55,8 +58,9 @@ public class SettingMenu : MonoBehaviour
     public void OnVolumeChange()
     {
         audioSrc.volume = volumeSlider.value;
-        Debug.Log(volumeSlider.value);
-    }  
+        PlayerPrefs.SetFloat("SliderVolumeLevel", volumeSlider.value);
+        audioSrc.volume = PlayerPrefs.GetFloat("SliderVolumeLevel", audioSrc.volume);
+    }
     public void OnFullScreenChange()
     {
         Screen.fullScreen = fullScreenToggle.isOn;
@@ -64,16 +68,16 @@ public class SettingMenu : MonoBehaviour
     }
     public void OnApplyButtonClick()
     {
+        FindObjectOfType<PauseScript>().Resume();
         isApply = true;
         currentResolution = Screen.currentResolution;
         currentVolume = volumeSlider.value;
         currentFullScreen = fullScreenToggle.isOn;
         Debug.Log("volume:" + currentVolume);
-        
-        
     }
     public void OnCancelButtonClick()
     {
+        FindObjectOfType<PauseScript>().Resume();
         isApply = false;
         Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);        
         audioSrc.volume = currentVolume;
