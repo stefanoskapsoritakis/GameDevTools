@@ -6092,6 +6092,7 @@ GameObject:
   - component: {fileID: 1317368754}
   - component: {fileID: 1317368753}
   - component: {fileID: 1317368755}
+  - component: {fileID: 1317368756}
   m_Layer: 0
   m_Name: sign_freeze_writing
   m_TagString: Untagged
@@ -6176,7 +6177,33 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Dont forget the key above!
+    - Don't forget the key above!
+--- !u!61 &1317368756
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317368752}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &1352857292
 GameObject:
   m_ObjectHideFlags: 0
@@ -6220,6 +6247,7 @@ GameObject:
   - component: {fileID: 1364667870}
   - component: {fileID: 1364667869}
   - component: {fileID: 1364667871}
+  - component: {fileID: 1364667872}
   m_Layer: 0
   m_Name: sign_freeze_arrow (1)
   m_TagString: Untagged
@@ -6305,6 +6333,32 @@ MonoBehaviour:
   dialogue:
     sentences:
     - Faster! FASTER!
+--- !u!61 &1364667872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364667868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!4 &1367529956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
@@ -10494,6 +10548,7 @@ GameObject:
   - component: {fileID: 2032954388}
   - component: {fileID: 2032954387}
   - component: {fileID: 2032954389}
+  - component: {fileID: 2032954390}
   m_Layer: 0
   m_Name: sign_freeze_arrow
   m_TagString: Untagged
@@ -10579,6 +10634,32 @@ MonoBehaviour:
   dialogue:
     sentences:
     - Got to go fast!
+--- !u!61 &2032954390
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032954386}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &2063326804
 GameObject:
   m_ObjectHideFlags: 0

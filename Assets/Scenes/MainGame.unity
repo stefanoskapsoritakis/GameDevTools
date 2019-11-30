@@ -9142,6 +9142,7 @@ GameObject:
   - component: {fileID: 250125515}
   - component: {fileID: 250125514}
   - component: {fileID: 250125516}
+  - component: {fileID: 250125517}
   m_Layer: 0
   m_Name: sign_text
   m_TagString: Untagged
@@ -9226,7 +9227,33 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - "You are doing great,\n keep going."
+    - You are doing great, keep going.
+--- !u!61 &250125517
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250125513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &256168664
 GameObject:
   m_ObjectHideFlags: 0
@@ -10492,6 +10519,7 @@ GameObject:
   - component: {fileID: 333921647}
   - component: {fileID: 333921646}
   - component: {fileID: 333921648}
+  - component: {fileID: 333921649}
   m_Layer: 0
   m_Name: sign_text (1)
   m_TagString: Untagged
@@ -10577,6 +10605,32 @@ MonoBehaviour:
   dialogue:
     sentences:
     - The exit is near, I can feel it.
+--- !u!61 &333921649
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333921645}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &341215179
 GameObject:
   m_ObjectHideFlags: 0
@@ -11725,7 +11779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3109426, y: -8.088692, z: -14}
+  m_LocalPosition: {x: -4.3217506, y: -8.088692, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1349971475}
@@ -19279,6 +19333,7 @@ GameObject:
   - component: {fileID: 2082810589}
   - component: {fileID: 2082810588}
   - component: {fileID: 2082810590}
+  - component: {fileID: 2082810591}
   m_Layer: 0
   m_Name: dir
   m_TagString: Untagged
@@ -19363,7 +19418,33 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Sometimes you have to take riskes
+    - Sometimes you have to take risks.
+--- !u!61 &2082810591
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082810587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1001 &1042871220253676505
 PrefabInstance:
   m_ObjectHideFlags: 0

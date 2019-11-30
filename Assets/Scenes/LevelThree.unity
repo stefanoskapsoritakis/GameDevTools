@@ -955,91 +955,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &124244408
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1334386048}
-    m_Modifications:
-    - target: {fileID: 1042871219747694771, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_Name
-      value: SignWithText
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694770, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6d40851cf9394594eaaceb0a5469e9b0,
-        type: 3}
-    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Escape from all the corrupted dogs and catchers!
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0e8a337e157f9754dbfaab8067378645, type: 3}
 --- !u!1 &132071366
 GameObject:
   m_ObjectHideFlags: 0
@@ -7923,6 +7838,7 @@ GameObject:
   - component: {fileID: 629611635}
   - component: {fileID: 629611634}
   - component: {fileID: 629611636}
+  - component: {fileID: 629611637}
   m_Layer: 0
   m_Name: sign_dark_text (2)
   m_TagString: Untagged
@@ -8008,6 +7924,32 @@ MonoBehaviour:
   dialogue:
     sentences:
     - I'm getting closer, I can feel it.
+--- !u!61 &629611637
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629611633}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &681058558
 GameObject:
   m_ObjectHideFlags: 0
@@ -11677,7 +11619,6 @@ Transform:
   m_Children:
   - {fileID: 143949275}
   - {fileID: 596352843}
-  - {fileID: 2088593661}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13845,6 +13786,7 @@ GameObject:
   - component: {fileID: 1741646521}
   - component: {fileID: 1741646520}
   - component: {fileID: 1741646522}
+  - component: {fileID: 1741646523}
   m_Layer: 0
   m_Name: sign_dark_arrow
   m_TagString: Untagged
@@ -13929,7 +13871,34 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Hm.... I smell something to the right.
+    - Hm...
+    - I smell something to the right.
+--- !u!61 &1741646523
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741646519}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &1743532017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15238,6 +15207,7 @@ GameObject:
   - component: {fileID: 1890145172}
   - component: {fileID: 1890145171}
   - component: {fileID: 1890145173}
+  - component: {fileID: 1890145174}
   m_Layer: 0
   m_Name: sign_dark_text
   m_TagString: Untagged
@@ -15301,7 +15271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890145170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.313045, y: -11.19, z: -5}
+  m_LocalPosition: {x: 2.83, y: -11.19, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15322,8 +15292,34 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Find the key by avoiding the dogs and dog catchers
-    - 'Jump up to find it '
+    - Find the key by avoiding the dogs and dog catchers.
+    - Jump up to find it!
+--- !u!61 &1890145174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890145170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &1891351779
 GameObject:
   m_ObjectHideFlags: 0
@@ -16402,6 +16398,7 @@ GameObject:
   - component: {fileID: 2004346254}
   - component: {fileID: 2004346253}
   - component: {fileID: 2004346255}
+  - component: {fileID: 2004346256}
   m_Layer: 0
   m_Name: sign_dark_text (1)
   m_TagString: Untagged
@@ -16486,10 +16483,36 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - 'You are doing great so far.
+    - 'You are doing great so far!
 
 '
     - But it will only get harder.
+--- !u!61 &2004346256
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004346252}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.22, y: 2.64}
+    newSize: {x: 2.22, y: 2.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.22, y: 2.64}
+  m_EdgeRadius: 0
 --- !u!1 &2041706220
 GameObject:
   m_ObjectHideFlags: 0
@@ -16648,12 +16671,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &2088593661 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
-    type: 3}
-  m_PrefabInstance: {fileID: 124244408}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2090570461
 GameObject:
   m_ObjectHideFlags: 0
