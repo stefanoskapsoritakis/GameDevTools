@@ -25,6 +25,7 @@ public class GirlCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         canvas.SetActive(true);
+        FindObjectOfType<FadeInScript>().FadeIn();
         scene.SetActive(false);
         GameObject.Find("Girl").transform.localScale = new Vector3(0, 0, 5);
         StartCoroutine(WaitForSec());
