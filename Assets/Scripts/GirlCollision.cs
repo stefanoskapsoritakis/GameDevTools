@@ -31,7 +31,7 @@ public class GirlCollision : MonoBehaviour
 
         IEnumerator WaitForSec()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(13);
             SceneManager.LoadScene(sceneNum);
         }
     }
