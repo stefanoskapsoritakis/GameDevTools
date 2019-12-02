@@ -8,6 +8,7 @@ Assets/Scenes/MainGame.unity
 Assets/Scenes/LevelTwo.unity
 Assets/Scenes/LevelThree.unity
 Assets/Scenes/LevelFour.unity
+Assets/Scenes/Credits.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GUIAnimatorFREEDemo
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -27,6 +28,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+7ce3c66b8ab47e3a9a2190e582cf2bc5 Assembly-CSharp.dll:.GirlCollision
 4e2e50bd11103c73eda5fcdcb47a0e80 Assembly-CSharp.dll:.KeyScript
 a2113831d3323f931007e1b3812dc814 Cinemachine.dll:Cinemachine.CinemachineFollowZoom
 d227987243593b32ae57394d06018643 Cinemachine.dll:Cinemachine.CinemachineFixedSignal
@@ -152,6 +154,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GA_FREE_Demo00
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MainMenu
 7ca765ad7969aae95e8011264b9c4046 Cinemachine.dll:Cinemachine.CinemachineTriggerAction
+cbeba0be93684d3bcd4b72542d830f58 Assembly-CSharp.dll:.ApplySettings
 bd543bad7f9f6262f10595aadb130d22 Cinemachine.dll:Cinemachine.CinemachineComposer
 3375c3d749f8f4cad889721b431bdc27 Assembly-CSharp.dll:TMPro.Examples.CameraController
 e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
@@ -167,7 +170,7 @@ e94eb8d93521e276cb2aed1745100212 Assembly-CSharp.dll:.PlayerMovement
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 3cae62e09a50c5d5aae8d0536b3d8fde Assembly-CSharp.dll:.ChatController
 56df1fa7cea034df9863fe5a24200a32 Cinemachine.dll:Cinemachine.CinemachineTargetGroup
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SoundManagerScript
+cbeba0be93684d3bcd4b72542d830f58 Assembly-CSharp.dll:.SoundManagerScript
 e244702e0dc05782229aa524e4d757f5 Assembly-CSharp.dll:TMPro.Examples.TMP_ExampleScript_01
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -235,6 +238,7 @@ fe2d355deb0ca31d59a0a7cf4d141fc3 Assembly-CSharp.dll:TMPro.Examples.Benchmark04
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachineHardLookAt
 4d16cfbaa8e821a2b370e80844a0e9bc Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
 e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
+73740c983ece2c41a4d6e228c4fb5c09 Assembly-CSharp.dll:.ScreenSelector
 71185c6cc4b3625f5de69e05ba8aebb9 Assembly-CSharp.dll:.Patrol
 5bb0c23ac2810973880e592724a69354 Assembly-CSharp.dll:TMPro.Examples.Benchmark02
 bd3f0ca738703903e759f77536ed74fd Assembly-CSharp.dll:TMPro.Examples.TMP_UiFrameRateCounter
@@ -246,7 +250,7 @@ f2b40f5e342c0a3909bc7cd54b7c1e79 Assembly-CSharp.dll:.loadOnClick
 dc6d6c2a6cf3e4742615cc520cc1a0ad Assembly-CSharp.dll:.Victory
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 e80c1450883443c68d6c2dade213536f Assembly-CSharp.dll:TMPro.Examples.TMPro_InstructionOverlay
-68580ebce45b2424ae1a1be9b418e672 Assembly-CSharp.dll:.IdleWalker
+6408e14cb65be49e3a3f7d553d942acb Assembly-CSharp.dll:.IdleWalker
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.KeyScore
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:TMPro.Examples.TeleType
 c12f6929b034322884ced721fca65b10 Assembly-CSharp.dll:TMPro.Examples.TextMeshProFloatingText
@@ -264,7 +268,8 @@ c2cbc5d1a414368d0fa3505ee1f34ec7 Assembly-CSharp.dll:.GA_FREE_Demo03
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 ffdbd5802c2482a072a88f428ad3ca9d Cinemachine.dll:Cinemachine.CinemachineBrain
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachineHardLockToTarget
+46a3ebeb6d2e6f844430f194f3fe4230 Assembly-CSharp.dll:.CharacterIdleWalk
+1a5c52003e8e294159bc34af6ce18873 Assembly-CSharp.dll:.FadeInScript
 94a6212bc97ed891bf46c9c21a0658cc Cinemachine.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 2792936179724025482dc04d68a47ca7 Cinemachine.dll:Cinemachine.CinemachineClearShot
 b73e694313708937fe177a0e0ede9630 Assembly-CSharp.dll:.GA_FREE_Demo06
-73740c983ece2c41a4d6e228c4fb5c09 Assembly-CSharp.dll:.ScreenSelector
