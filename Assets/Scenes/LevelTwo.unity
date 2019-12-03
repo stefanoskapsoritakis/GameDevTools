@@ -2949,7 +2949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3019608, g: 0.28235295, b: 0.34509805, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10517,12 +10517,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1042871219747694770, guid: 0e8a337e157f9754dbfaab8067378645,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fd92e535bfbbfea489d898a6ec64b9a0,
-        type: 3}
     - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -10538,6 +10532,12 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[1]
       value: Treats give you more time.
       objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694770, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd92e535bfbbfea489d898a6ec64b9a0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8a337e157f9754dbfaab8067378645, type: 3}
 --- !u!1 &2032954386

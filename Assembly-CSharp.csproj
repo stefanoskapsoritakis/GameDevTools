@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\QuitScript.cs" />
     <Compile Include="Assets\Scripts\ScreenSelector.cs" />
     <Compile Include="Assets\Scripts\SettingMenu.cs" />
     <Compile Include="Assets\Scripts\SignTutorial.cs" />

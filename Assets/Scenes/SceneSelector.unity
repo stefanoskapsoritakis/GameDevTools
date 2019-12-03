@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingImage: {fileID: 0}
+  loadlevel: 0
 --- !u!114 &38143293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,7 +1157,7 @@ MonoBehaviour:
   fullScreenToggle: {fileID: 159028973}
   resolutionDropdown: {fileID: 1349710985}
   volumeSlider: {fileID: 1538062883}
-  audioSrc: {fileID: 0}
+  audioSrc: {fileID: 1016182253}
   fullScreen: 0
   resolutionIndex: 0
   isApply: 0
@@ -4616,6 +4617,7 @@ GameObject:
   - component: {fileID: 1964595230}
   - component: {fileID: 1964595233}
   - component: {fileID: 1964595232}
+  - component: {fileID: 1964595234}
   - component: {fileID: 1964595231}
   m_Layer: 5
   m_Name: QuitButton
@@ -4685,7 +4687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1781884422}
-        m_MethodName: LoadMenu
+        m_MethodName: LoadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4730,6 +4732,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964595229}
   m_CullTransparentMesh: 0
+--- !u!114 &1964595234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964595229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9b588d07903f345ab202c7a23fcf13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingImage: {fileID: 0}
+  loadlevel: 0
 --- !u!1 &1983405155
 GameObject:
   m_ObjectHideFlags: 0
