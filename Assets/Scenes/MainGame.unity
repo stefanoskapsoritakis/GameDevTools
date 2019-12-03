@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 111989890}
   - component: {fileID: 111989889}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: KeyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8873,11 +8873,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196471079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.06857, y: 9.752918, z: -1.953125}
+  m_LocalPosition: {x: 193.06857, y: 9.752918, z: -4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1936492003}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &196471084
 MonoBehaviour:
@@ -9205,12 +9205,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250125513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130, y: -5.1, z: -3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 99.76856, y: -1.8680818, z: -4.953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1936492003}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &250125516
 MonoBehaviour:
@@ -10582,12 +10582,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333921645}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 294, y: 8.9, z: -3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 263.76855, y: 12.131918, z: -4.953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1936492003}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &333921648
 MonoBehaviour:
@@ -11779,7 +11779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3457265, y: -8.088692, z: -14}
+  m_LocalPosition: {x: -25.41, y: -12.35, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1349971475}
@@ -12055,7 +12055,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1936492003}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &571232575
 MonoBehaviour:
@@ -12072,7 +12072,7 @@ MonoBehaviour:
   sentences: []
   dialogue:
     sentences:
-    - Find the key to leave the map!
+    - Find the key to leave the area!
 --- !u!61 &571232576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12241,7 +12241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -170, y: -15}
+  m_AnchoredPosition: {x: 30, y: -15}
   m_SizeDelta: {x: 441.5, y: 197.79999}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &633547265
@@ -12281,7 +12281,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -14211,7 +14211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 190, y: 0}
+  m_AnchoredPosition: {x: -16.5, y: 6}
   m_SizeDelta: {x: 12, y: 36}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1101554082
@@ -15420,7 +15420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349971473}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 21.060806, y: 4.2613087, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1215394109}
@@ -18650,6 +18650,9 @@ Transform:
   m_LocalPosition: {x: 30.231436, y: -3.231918, z: 1.953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 250125515}
+  - {fileID: 2082810589}
+  - {fileID: 333921647}
   - {fileID: 571232574}
   - {fileID: 574159724}
   - {fileID: 196471083}
@@ -18738,7 +18741,7 @@ Transform:
   m_Children:
   - {fileID: 1926617082}
   m_Father: {fileID: 1936492003}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1995076767
 MonoBehaviour:
@@ -19396,12 +19399,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082810587}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 239, y: 0.9, z: -3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 208.76857, y: 4.131918, z: -4.953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1936492003}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2082810590
 MonoBehaviour:
@@ -19465,12 +19468,12 @@ PrefabInstance:
     - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.8480816
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.953125
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
         type: 3}
@@ -19495,7 +19498,7 @@ PrefabInstance:
     - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1042871219747694773, guid: 0e8a337e157f9754dbfaab8067378645,
         type: 3}
@@ -19511,6 +19514,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Press A, D and SPACE or use the ARROW keys to move!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042871219747694774, guid: 0e8a337e157f9754dbfaab8067378645,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Press ENTER to see the next dialogue.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8a337e157f9754dbfaab8067378645, type: 3}

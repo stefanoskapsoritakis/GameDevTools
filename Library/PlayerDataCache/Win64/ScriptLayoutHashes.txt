@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-D:/Programming/New folder/New folder/GameDevTools.exe
+C:/Users/stefa/OneDrive/Υπολογιστής/ga/GameDevTools.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/SceneSelector.unity
