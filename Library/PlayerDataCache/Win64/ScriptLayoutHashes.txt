@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/stefa/OneDrive/Υπολογιστής/ga/GameDevTools.exe
+C:/Users/soulb/OneDrive/Desktop/TestBuild/GameDevTools.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/SceneSelector.unity
@@ -155,6 +155,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MainMenu
 7ca765ad7969aae95e8011264b9c4046 Cinemachine.dll:Cinemachine.CinemachineTriggerAction
 cbeba0be93684d3bcd4b72542d830f58 Assembly-CSharp.dll:.ApplySettings
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.QuitScript
 bd543bad7f9f6262f10595aadb130d22 Cinemachine.dll:Cinemachine.CinemachineComposer
 3375c3d749f8f4cad889721b431bdc27 Assembly-CSharp.dll:TMPro.Examples.CameraController
 e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
@@ -244,7 +245,7 @@ e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
 bd3f0ca738703903e759f77536ed74fd Assembly-CSharp.dll:TMPro.Examples.TMP_UiFrameRateCounter
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
 e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexZoom
-f2b40f5e342c0a3909bc7cd54b7c1e79 Assembly-CSharp.dll:.loadOnClick
+4c201ff22409eb846effd399c7d727b4 Assembly-CSharp.dll:.loadOnClick
 0701e8948ad53c0c8ba48b66071744f5 Assembly-CSharp.dll:.GA_FREE_Demo01
 381be71b53b7421158e682e737f31185 Assembly-CSharp.dll:.DialogueSystem
 dc6d6c2a6cf3e4742615cc520cc1a0ad Assembly-CSharp.dll:.Victory

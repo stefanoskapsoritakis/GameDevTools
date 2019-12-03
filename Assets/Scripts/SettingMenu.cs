@@ -33,8 +33,8 @@ public class SettingMenu : MonoBehaviour
     }
     public void OnEnable()
     {
-        
-        resolutions = Screen.resolutions;
+
+
         currentResolution = Screen.currentResolution;
               
         currentFullScreen = fullScreenToggle.isOn;
@@ -42,17 +42,16 @@ public class SettingMenu : MonoBehaviour
         
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
         volumeSlider.onValueChanged.AddListener(delegate { OnVolumeChange(); });
-        resolutions = Screen.resolutions;
-        resolutionDropdown.options.Add(new Dropdown.OptionData(currentResolution.ToString()));
-        foreach (Resolution resolution in resolutions)
-        {
-            resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
-        }
+        
         
     }
     public void OnResolutionChange()
     {
-        Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, Screen.fullScreen);
+        string selectedResolution = resolutionDropdown.options[resolutionDropdown.value].text;
+        string[] value = selectedResolution.Split('x');
+        
+        Screen.SetResolution(int.Parse(value[0]), int.Parse(value[1]), Screen.fullScreen);
+        
     }
     
     public void OnVolumeChange()
