@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class FadeInScript : MonoBehaviour
 {
     public Image whiteFade;
+    
+
     // Start is called before the first frame update
     void Start()
     {
+        
         whiteFade.canvasRenderer.SetAlpha(1.0f);
     }
 
